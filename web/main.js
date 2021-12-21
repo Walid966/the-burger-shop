@@ -119,8 +119,6 @@ let adminMenu = document.querySelector('#admin-menu');
 let subs = document.querySelector('#subs');
 let inbox = document.querySelector('#inbox');
 
-// console.log(adminNavLinks);
-
 adminNavLinks.forEach((e) => {
 	e.addEventListener('click', () => {
 		if (e.classList.contains('admin-nav-menu')) {
@@ -156,10 +154,6 @@ let modal = document.getElementById('myModal');
 let modalInputs = document.querySelector('.modal-inputs');
 let theInputs = document.querySelectorAll('.modal-inputs input');
 
-// theInputs.forEach(input => {
-//   console.log(input.name = input.name.replace('food', 'burger'));
-// })
-
 // foreach icon
 icons.forEach((el) => {
 	el.addEventListener('click', (event) => {
@@ -169,36 +163,6 @@ icons.forEach((el) => {
 		modalBtn.forEach((btn) => {
 			btn.style.display = 'none';
 		});
-
-		// if(event.target.classList.contains('edit-icon') || event.target.classList.contains('delete-icon') ) {
-
-		//   // document.getElementById("burger-form").submit();
-
-		//   $(document).ready(function(){
-
-		//     let id = $("#burger-id").val();
-		//     let name = $(".burger-name").val();
-		//     let des = $(".burger-description").val();
-		//     let price = $(".burger-price").val();
-
-		//     console.log('id: ', id, 'price: ', price)
-
-		//     $.ajax({
-		//       url: "views/form.php",
-		//       type: "post",
-		//       data: {'burger-id': id, 'burger-name': name, 'burger-description': des, 'burger-price': price},
-		//       success: function (response) {
-
-		//         // You will get response from your PHP page (what you echo or print)
-		//       },
-		//       error: function(jqXHR, textStatus, errorThrown) {
-		//         console.log(textStatus, errorThrown);
-		//       }
-		//     });
-
-		//   });
-
-		// }
 
 		if (event.target.classList.contains('add-icon')) {
 			modalInputs.style.display = 'block';
@@ -215,23 +179,6 @@ icons.forEach((el) => {
 					p.style.display = 'block';
 				}
 			});
-
-			// let regex = /^[^-]*-/;
-			// if(event.target.classList.contains('add-burger') ) {
-			//   theInputs.forEach(input => {
-			//     input.name = input.name.replace(regex, 'burger-');
-			//   })
-			// }
-			// if(event.target.classList.contains('add-side')) {
-			//   theInputs.forEach(input => {
-			//     input.name = input.name.replace(regex, 'side-');
-			//   })
-			// }
-			// if(event.target.classList.contains('add-drink')) {
-			//   theInputs.forEach(input => {
-			//     input.name = input.name.replace(regex, 'drink-');
-			//   })
-			// }
 		}
 
 		if (event.target.classList.contains('edit-icon')) {
@@ -281,26 +228,19 @@ closeModal.forEach((el) => {
 	});
 });
 
-////////////////////// ajax /////////////////////////
 $(document).ready(function () {
 	$('a').on('click', function (event) {
-		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== '') {
-			// Prevent default anchor click behavior
 			event.preventDefault();
 
-			// Store hash
 			var hash = this.hash;
 
-			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate(
 				{
 					scrollTop: $(hash).offset().top
 				},
 				500,
 				function () {
-					// Add hash (#) to URL when done scrolling (default click behavior)
 					window.location.hash = hash;
 				}
 			);
@@ -885,7 +825,6 @@ $(document).ready(function () {
 
 			// delete burger
 			if ($(this).hasClass('delete-burger')) {
-				console.log('delete clicked');
 				let getId = $(this).find('input#burger-id').val();
 				$('#myModal').show();
 				$('.delete-btn').show();
@@ -908,7 +847,6 @@ $(document).ready(function () {
 					success: function (res, status) {
 						modalId.val(res.burger_id);
 						deleteFood.html(res.name);
-						// console.log(res.name);
 					},
 					error: function (jqXHR, textStatus, errorThrown) {
 						console.log(textStatus, errorThrown);
@@ -936,8 +874,6 @@ $(document).ready(function () {
 									`input[type="hidden"][value="${modalId.val()}"]`
 								).closest('.burger-container');
 
-								// console.log(burgerContainer);
-
 								burgerContainer.hide('fast', function () {
 									burgerContainer.remove();
 								});
@@ -953,7 +889,6 @@ $(document).ready(function () {
 
 			// delete side
 			if ($(this).hasClass('delete-side')) {
-				console.log('delete clicked');
 				let getId = $(this).find('input#side-id').val();
 				$('#myModal').show();
 				$('.delete-btn').show();
@@ -976,7 +911,6 @@ $(document).ready(function () {
 					success: function (res, status) {
 						modalId.val(res.side_id);
 						deleteFood.html(res.name);
-						// console.log(res.name);
 					},
 					error: function (jqXHR, textStatus, errorThrown) {
 						console.log(textStatus, errorThrown);
@@ -1004,8 +938,6 @@ $(document).ready(function () {
 									`input[type="hidden"][value="${modalId.val()}"]`
 								).closest('.side-container');
 
-								// console.log(sideContainer);
-
 								sideContainer.hide('fast', function () {
 									sideContainer.remove();
 								});
@@ -1021,7 +953,6 @@ $(document).ready(function () {
 
 			// delete drink
 			if ($(this).hasClass('delete-drink')) {
-				console.log('delete clicked');
 				let getId = $(this).find('input#drink-id').val();
 				$('#myModal').show();
 				$('.delete-btn').show();
@@ -1044,7 +975,6 @@ $(document).ready(function () {
 					success: function (res, status) {
 						modalId.val(res.drink_id);
 						deleteFood.html(res.name);
-						// console.log(res.name);
 					},
 					error: function (jqXHR, textStatus, errorThrown) {
 						console.log(textStatus, errorThrown);
@@ -1071,8 +1001,6 @@ $(document).ready(function () {
 								let drinkContainer = $(
 									`input[type="hidden"][value="${modalId.val()}"]`
 								).closest('.drink-container');
-
-								// console.log(drinkContainer);
 
 								drinkContainer.hide('fast', function () {
 									drinkContainer.remove();
@@ -1109,7 +1037,6 @@ $(document).ready(function () {
 			url: 'views/contact/select-contact.php',
 			type: 'GET',
 			success: function (res) {
-				console.log(res);
 				res.forEach(function (row) {
 					$('#inbox table').append(
 						createTds(
@@ -1153,14 +1080,12 @@ $(document).ready(function () {
 				'email': email.val(),
 				'message': textArea.val()
 			};
-			// console.log(inputData);
 
 			$.ajax({
 				url: 'views/contact-form.php',
 				type: 'POST',
 				data: inputData,
 				success: function (res) {
-					console.log(res);
 					if (res === 'success') {
 						$('.flash-msg').html('Your message has been sent.');
 						$(textArea).removeClass('border-warning');
@@ -1235,9 +1160,7 @@ $(document).ready(function () {
 
 	// inbox
 	$('#inbox table').on('click', 'tr.tr-body', function () {
-		console.log('roww');
 		let id = $(this).find('input[name=contact-id]');
-		console.log('contactId: ', id.val());
 		$.ajax({
 			url: 'views/contact/delete-msg.php',
 			type: 'GET',
@@ -1249,8 +1172,6 @@ $(document).ready(function () {
 					$('.msg-clicked').addClass('none');
 					$('#inbox table').removeClass('none');
 				});
-
-				console.log('res: ', res, 'resId: ', res.id);
 
 				$('#inbox .msg-email').html(res.email);
 				$('#reply .reply-to').html(res.email);
@@ -1278,7 +1199,6 @@ $(document).ready(function () {
 			.click(function (e) {
 				e.preventDefault();
 				let msgId = $('.confirm-delete').find('input[type=hidden]');
-				console.log('msgId: ', msgId.val());
 				$.ajax({
 					url: 'views/contact/delete-msg.php',
 					type: 'POST',
@@ -1286,7 +1206,6 @@ $(document).ready(function () {
 					success: function (res) {
 						if (res) {
 							$('table').find('input[type=hidden]').closest('tr').remove();
-							// $('.msg-deleted').html(res);
 							$('.confirm-delete').addClass('none');
 							$('#inbox table').removeClass('none');
 
@@ -1302,4 +1221,3 @@ $(document).ready(function () {
 
 	// inbox end
 });
-//////////////////////// ajax ////////////////////////

@@ -34,9 +34,6 @@ require_once('views/page-content/navbar.php');
                 <img src="img/pexels-nadezhda-moryak-4409273.jpg" alt="burger">
             </div>
         </div>
-        <!-- <div class="starburst">
-            <img src="img/starburst-four-point.svg" alt="four point starburst">
-        </div> -->
     </section>
 
     <div class="container">
@@ -87,7 +84,6 @@ require_once('views/page-content/navbar.php');
                                 OFFER
                             </h2>
                         </div>
-                        <!-- <p>Here are our popular menu items.</p> -->
                         <div class="full-menu">
                             <p>Curious? See our full menu.</p>
                             <a class="btn" href="full-menu.php">full menu</a>

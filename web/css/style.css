@@ -8,15 +8,9 @@
 	text-decoration: none;
 }
 
-/* html {
-	scroll-behavior: smooth;
-} */
-
 .wrapper {
 	overflow-x: hidden;
 	width: 100%;
-	/* max-width: 1300px; */
-	/* margin: auto; */
 	position: relative;
 	min-height: 100vh;
 }
@@ -24,7 +18,6 @@
 body {
 	scroll-behavior: smooth;
 	font-family: 'Raleway', sans-serif;
-	/* height: 100% */
 	min-height: 100vh;
 }
 
@@ -41,10 +34,6 @@ body {
 .inner-container {
 	padding: 0 20px;
 }
-
-/* .show-case .inner-container {
-	padding: 0 0 0 30px;
-} */
 
 .flex {
 	display: flex;
@@ -130,7 +119,6 @@ nav a:hover,
 	margin-bottom: 60px;
 	margin-top: 60px;
 	line-height: 0.8;
-	/* font-weight: 900; */
 }
 
 h2 {
@@ -141,7 +129,6 @@ h2 {
 .show-case {
 	height: 90vh;
 	position: relative;
-	/* background-color: orangered; */
 }
 
 .imgs {
@@ -150,7 +137,6 @@ h2 {
 	top: 0;
 	width: 100%;
 	bottom: 0;
-	/* z-index: 12; */
 	display: flex;
 }
 
@@ -184,7 +170,6 @@ h2 {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	/* background-size: cover; */
 }
 
 .burger-two img {
@@ -382,11 +367,9 @@ h2 {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	/* background-size: cover; */
 }
 
 .pop-item div .burger {
-	/* transform: scale(1.5); */
 	margin-top: -190px;
 }
 
@@ -426,7 +409,6 @@ h2 {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 140px;
-	/* padding: 0 20px; */
 }
 
 .food {
@@ -475,20 +457,10 @@ h2 {
 .drink-container,
 .side-container {
 	margin: 14px 0;
-	/* max-width: 90%; */
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	/* flex-direction: column; */
 }
-
-/* .item-container .burger-div {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-} */
 
 .burger-container .food-info,
 .drink-container .food-info,
@@ -515,24 +487,20 @@ h2 {
 }
 
 .price {
-	/* align-self: flex-start; */
 	margin-left: 10px;
 }
 
 .all-menu .info-menu {
 	display: flex;
 	flex-direction: column;
-	/* width: 25%; */
 	width: 100%;
 	max-width: 350px;
 	height: auto;
 	overflow: hidden;
 	color: #741f1c;
-	/* background: #f6ecd9; */
 }
 
 .all-menu .info-menu .img-menu {
-	/* flex: 1; */
 	width: 100%;
 	height: 66%;
 	overflow: hidden;
@@ -542,7 +510,6 @@ h2 {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	/* margin-left: 20px; */
 }
 
 /* reviews */
@@ -576,10 +543,6 @@ h2 {
 	margin-top: 140px;
 }
 
-/* .contact h2 {
-  margin-left: 30px;
-} */
-
 .contact-info {
 	width: 100%;
 	max-width: 40%;
@@ -601,7 +564,6 @@ h2 {
 	font-size: 20px;
 	width: 100%;
 	max-width: 200px;
-	/* background-color: tomato; */
 }
 
 .contact-info .address {
@@ -610,14 +572,12 @@ h2 {
 
 .contact-info p {
 	font-size: 22px;
-	/* font-weight: 100; */
 }
 
 /* form */
 form {
 	width: 100%;
 	height: 100%;
-	/* background-color: rgb(167, 35, 105); */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -626,7 +586,6 @@ form {
 form p.flash-msg {
 	font-size: 18px;
 	margin-right: auto;
-	/* color: #000; */
 	font-weight: 300;
 }
 
@@ -657,7 +616,6 @@ form div,
 textarea {
 	width: 100%;
 	max-width: 300px;
-	/* background-color: #741f1c; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -670,7 +628,6 @@ form label {
 	max-width: 300px;
 	text-align: left;
 	margin-bottom: 8px;
-	/* align-self: center; */
 	text-transform: capitalize;
 	color: #383838;
 	font-weight: 500;
@@ -679,14 +636,10 @@ form label {
 form .btn.submit-btn {
 	color: #fff;
 	background-color: orangered;
-	/* text-align: center; */
 	margin: 0;
-	/* align-items: center;
-  justify-content: center; */
 	font-size: 16px;
 	padding: 10px;
 	margin-top: 20px;
-	/* margin-left: -60px; */
 	margin-right: auto;
 	width: 140px;
 }
@@ -703,8 +656,6 @@ textarea,
 	max-width: 300px;
 	padding: 10px;
 	border-radius: 5px;
-
-	/* margin-left: 10px; */
 }
 
 .submit-div {
@@ -722,15 +673,8 @@ input:focus {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 0 2px 10px 0 #20212447;
-	/* justify-content: center;
-	align-items: center; */
-	/* background-color: rgb(241, 135, 135); */
-	/* z-index: 10; */
 	position: relative;
-	/* top: 250px; */
-	/* left: 0; */
 	width: 100%;
-	/* height: 500px; */
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
@@ -770,10 +714,7 @@ input:focus {
 	margin-top: 20px;
 	margin-bottom: 40px;
 	word-break: break-all;
-	/* height: 170px;
-	overflow-y: auto; */
 	background-color: rgb(255, 255, 255);
-	/* padding: 0 20px; */
 }
 
 .msg-btns {
@@ -844,7 +785,6 @@ input:focus {
 
 .newsletter p {
 	max-width: 300px;
-	/* font-weight: bold; */
 	margin: 20px auto;
 	text-align: center;
 }
@@ -856,7 +796,6 @@ input:focus {
 form p.flash-msg {
 	font-size: 18px;
 	margin-right: auto;
-	/* color: #000; */
 	font-weight: 300;
 }
 
@@ -912,9 +851,6 @@ footer {
 
 .footer-info .logo {
 	color: #fff;
-	/* position: absolute;
-  top: 50%;
-  transform: translateY(-25%); */
 }
 
 footer ul li {
@@ -945,17 +881,14 @@ footer ul a {
 	border-top: 1px solid #d84e18;
 	margin: 50px auto 50px auto;
 	padding-top: 50px;
-	/* font-size: 14px; */
 	color: #ffffff;
 	display: flex;
-	/* flex-direction: column; */
 	align-items: flex-start;
 	justify-content: center;
 	line-height: 1.4;
 }
 
 .attributon a {
-	/* margin: px; */
 	font-size: 14px;
 	color: #ffffff;
 }
@@ -1008,8 +941,6 @@ footer ul a {
 }
 
 .admin-area {
-	/* box-shadow: 0 2px 10px 0 #20212447; */
-	/* padding: 20px; */
 	min-height: 850px;
 }
 
@@ -1023,19 +954,15 @@ footer ul a {
 	margin: 50px auto;
 	overflow: hidden;
 	box-shadow: 0 2px 10px 0 #20212447;
-	/* background: #741f1c; */
 }
 
 .admin-area li {
-	/* margin: 0 20px; */
 	padding: 18px 5px;
-
 	cursor: pointer;
 	font-weight: bold;
 	width: 100px;
 	text-align: center;
 	font-size: 15px;
-	/* background: #ddd; */
 }
 
 #inbox,
@@ -1100,19 +1027,6 @@ td {
 	margin-bottom: 20px;
 }
 
-/* .subs ul {
-  width: 80%;
-  margin: auto;
-}
-
-.subs li {
-  padding: 5px;
-  width: unset;
-  text-align: left;
-  cursor: unset;
-  font-weight: normal;
-} */
-
 .border {
 	position: absolute;
 	bottom: 0;
@@ -1140,15 +1054,6 @@ td {
 	margin-left: 16px;
 }
 
-/* .food {
-  padding: 25px;
-}
-
-.food form div {
-  flex-direction: row;
-  max-width: unset;
-} */
-
 #admin-menu .food .description {
 	font-size: 14px;
 	color: #615945;
@@ -1159,32 +1064,29 @@ td {
 	max-width: 130px;
 	display: flex;
 	justify-content: flex-end;
-	/* background-color: turquoise; */
 }
 
 #admin-menu .burger-container form {
 	width: unset;
 }
 
-/* The Modal (background) */
+/* The Modal */
 .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* modal */
 /* Modal Content */
 .modal {
-	/* position: relative; */
 	z-index: 9000000000000000;
 }
 
@@ -1261,11 +1163,8 @@ div.close:hover {
 /* The Close Button */
 span.close {
 	color: #aaaaaa;
-	/* float: right; */
 	font-size: 44px;
 	padding: 0px 10px;
-	/* border: 1px solid #aaa; */
-	/* font-weight: bold; */
 	align-self: flex-start;
 	position: absolute;
 	top: 0;
@@ -1288,11 +1187,6 @@ span.close {
 	display: flex;
 }
 
-/* .prev,
-.next {
-  display: none;
-} */
-
 .m-menu,
 .m-reviews,
 .ham-menu {
@@ -1303,15 +1197,10 @@ span.close {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	/* z-index: -1; */
 }
 
 /* mobile */
 @media only screen and (max-width: 1350px) {
-	/* .burger img {
-		height: 100%;
-	} */
-
 	.burger-one img {
 		transform: scale(1.2);
 		margin-top: -600px;
@@ -1346,7 +1235,6 @@ span.close {
 	}
 
 	.pop-item div .burger {
-		/* transform: scale(1.5); */
 		margin-top: -160px;
 	}
 
@@ -1374,7 +1262,6 @@ span.close {
 	}
 
 	.pop-item div .burger {
-		/* transform: scale(1.5); */
 		margin-top: -140px;
 	}
 
@@ -1406,11 +1293,9 @@ span.close {
 	}
 
 	.pop-item div .burger {
-		/* transform: scale(1.5); */
 		margin-top: -120px;
 	}
 	.pop-item div .wings {
-		/* transform: scale(1.5); */
 		margin-top: 12px;
 	}
 }
@@ -1851,7 +1736,6 @@ span.close {
 		font-weight: bold;
 		width: 60px;
 		height: 80px;
-		/* background: #000; */
 		margin: unset;
 		transform: translateY(-50%);
 	}
@@ -1944,9 +1828,7 @@ span.close {
 	}
 
 	.contact-info p {
-		/* margin-bottom: 10px; */
 		font-size: 14px;
-		/* font-weight: 100; */
 	}
 
 	div.al,
@@ -1966,7 +1848,6 @@ span.close {
 	form {
 		width: 100%;
 		height: 100%;
-		/* background-color: rgb(167, 35, 105); */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -2021,7 +1902,6 @@ span.close {
 
 @media only screen and (max-width: 620px) {
 	/* mobile menu */
-
 	.gourmet {
 		transform: translateY(-320px);
 	}
@@ -2057,10 +1937,6 @@ span.close {
 	.footer-items {
 		padding: 40px 10px;
 	}
-
-	/* .all-menu .info-menu {
-			display: none;
-		} */
 
 	.food {
 		padding: 18px;
